@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f5ef">
+  <meta name="description" content="Discover your signature scent with ASLI PERFUMES. Explore an elegant collection of fragrance.">
+  <title>ASLI PERFUMES — Discover Your Signature Scent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">COMPLIMENTARY DELIVERY ON ORDERS OVER $100 <span>✦</span> A WORLD OF SCENT, CURATED FOR YOU</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="ASLI Perfumes home"><span>ASLI</span><small>PERFUMES</small></a>
+    <button class="menu-toggle icon-button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#home" data-route="home">Home</a><a href="#shop" data-route="shop">Shop</a>
+      <a href="#collections" data-route="collections">Collections</a><a href="#about" data-route="about">Our Story</a><a href="#contact" data-route="contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-toggle" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+      <a class="icon-button account-link" href="#contact" aria-label="Contact"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 21c.7-4.2 3.2-6.3 7.5-6.3s6.8 2.1 7.5 6.3"/></svg></a>
+      <button class="icon-button bag-toggle" aria-label="Open shopping bag"><svg viewBox="0 0 24 24"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span class="cart-count">0</span></button>
+    </div>
+  </header>
+
+  <div class="search-panel" aria-hidden="true"><form id="header-search"><input type="search" placeholder="Search your next signature scent…" aria-label="Search fragrances"><button class="text-button">SEARCH ↗</button></form></div>
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand"><a class="brand brand-light" href="#home"><span>ASLI</span><small>PERFUMES</small></a><p>Discover your signature scent.<br>A beautiful expression of you.</p><div class="socials"><a href="#contact" aria-label="Instagram">IG</a><a href="#contact" aria-label="Pinterest">P</a><a href="#contact" aria-label="Facebook">FB</a></div></div>
+      <div><h3>EXPLORE</h3><a href="#shop">All fragrances</a><a href="#collections">Collections</a><a href="#about">Our story</a></div>
+      <div><h3>CLIENT CARE</h3><a href="#contact">Contact us</a><a href="#contact">Shipping & delivery</a><a href="#contact">Frequently asked</a></div>
+      <div class="footer-note"><h3>THE ASLI LETTER</h3><p>Fragrance notes, new arrivals and considered little luxuries.</p><a href="#contact" class="footer-cta">JOIN OUR WORLD ↗</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> ASLI PERFUMES. DEMONSTRATION STORE.</span><span>MADE TO BE REMEMBERED.</span></div>
+  </footer>
+
+  <div class="drawer-backdrop"></div>
+  <aside class="cart-drawer" aria-label="Shopping bag" aria-hidden="true">
+    <div class="drawer-head"><div><span class="eyebrow">YOUR SELECTION</span><h2>Your Bag <span class="drawer-count">(0)</span></h2></div><button class="close-drawer icon-button" aria-label="Close bag">×</button></div>
+    <div class="cart-items"></div>
+    <div class="drawer-bottom"><div class="subtotal"><span>Subtotal</span><strong>$0.00</strong></div><p>Shipping and taxes are calculated at checkout.</p><button class="button button-dark checkout-button">CONTINUE TO CHECKOUT <span>↗</span></button><button class="continue-shopping">CONTINUE SHOPPING</button><small class="demo-note">Demo experience — checkout is not connected to payments.</small></div>
+  </aside>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
